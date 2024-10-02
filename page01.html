@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aulas de HTML - Plataforma de Estudos de Programação</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        nav {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        nav h2 {
+            margin-top: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #2980b9;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 2px solid #1abc9c;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aulas de HTML</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sumário -->
+        <nav>
+            <h2>Sumário</h2>
+            <ul>
+                <li><a href="#conceitos-basicos">1. Conceitos Básicos do HTML</a></li>
+                <li><a href="#introducao">2. Introdução ao HTML</a></li>
+                <li><a href="#tags-basicas">3. Tags Básicas do HTML</a></li>
+                <li><a href="#links-e-imagens">4. Links e Imagens</a></li>
+                <li><a href="#formularios">5. Formulários em HTML</a></li>
+                <li><a href="#estilos-formatacao">6. Estilos e Formatação</a></li>
+                <li><a href="#exercicios-html">7. Exercícios</a></li>
+                <li><a href="#introducao-css">8. Introdução ao CSS</a></li>
+                <li><a href="#conceitos-basicos-css">9. Conceitos Básicos do CSS</a></li>
+                <li><a href="#sintaxe-css">10. Sintaxe do CSS</a></li>
+                <li><a href="#seletores-css">11. Seletores no CSS</a></li>
+                <li><a href="#grid-css">12. Grid no CSS</a></li>
+                <li><a href="#exercicios-css">13. Exercícios de CSS</a></li>
+            </ul>
+        </nav>
+
+        <!-- Conteúdo das Aulas -->
+        <section id="conceitos-basicos">
+            <h2>1. Conceitos Básicos do HTML</h2>
+            <p>HTML (HyperText Markup Language) é uma linguagem de marcação usada para estruturar conteúdo na web. Cada página da web que você vê é criada com HTML, que organiza o conteúdo em elementos distintos, como cabeçalhos, parágrafos, imagens e links.</p>
+            <p>Um documento HTML é composto por uma série de elementos, chamados de "tags". Essas tags são utilizadas para envolver o conteúdo e dar significado semântico à estrutura do documento.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Exemplo de HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+    &lt;p&gt;Este é um exemplo básico de uma página HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            <p>O código acima é uma estrutura básica de HTML, onde o conteúdo é organizado dentro das tags de abertura e fechamento, começando com <code>&lt;html&gt;</code> e terminando com <code>&lt;/html&gt;</code>.</p>
+        </section>
+
+        <section id="introducao">
+            <h2>2. Introdução ao HTML</h2>
+            <p>HTML (HyperText Markup Language) é a linguagem padrão para a criação de páginas web. Ele define a estrutura do conteúdo em uma página web, utilizando uma série de elementos conhecidos como "tags".</p>
+            <p>Com HTML, você pode criar páginas estruturadas, incluindo cabeçalhos, parágrafos, listas, links, imagens e muito mais. Ele é a base de todo o desenvolvimento web.</p>
+        </section>
+
+        <section id="tags-basicas">
+            <h2>3. Tags Básicas do HTML</h2>
+            <p>As tags são os blocos de construção de uma página HTML. Elas são usadas para definir diferentes partes do conteúdo, como:</p>
+            <ul>
+                <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong> - Cabeçalhos de diferentes tamanhos.</li>
+                <li><strong>&lt;p&gt;</strong> - Define um parágrafo.</li>
+                <li><strong>&lt;a&gt;</strong> - Cria um link para outra página ou recurso.</li>
+                <li><strong>&lt;img&gt;</strong> - Insere uma imagem em sua página.</li>
+                <li><strong>&lt;div&gt;</strong> - Define uma divisão ou uma seção.</li>
+            </ul>
+            <p>Essas são algumas das tags mais comuns. Conforme avançamos, aprenderemos a combinar essas tags para criar layouts completos e funcionais.</p>
+        </section>
+
+        <section id="links-e-imagens">
+            <h2>4. Links e Imagens</h2>
+            <p>Links e imagens são elementos essenciais em qualquer página da web.</p>
+            <p>O elemento <strong>&lt;a&gt;</strong> é usado para criar links:</p>
+            <pre><code>&lt;a href="https://www.exemplo.com"&gt;Visite o site&lt;/a&gt;</code></pre>
+            <p>Já o elemento <strong>&lt;img&gt;</strong> é usado para adicionar imagens à página:</p>
+            <pre><code>&lt;img src="imagem.jpg" alt="Descrição da Imagem"&gt;</code></pre>
+            <p>É importante sempre usar o atributo <strong>alt</strong> para descrever a imagem, pois isso ajuda na acessibilidade e otimização para motores de busca.</p>
+        </section>
+
+        <section id="formularios">
+            <h2>5. Formulários em HTML</h2>
+            <p>Formulários são utilizados para coletar dados dos usuários. Eles são criados com a tag <strong>&lt;form&gt;</strong> e podem incluir diferentes tipos de campos, como caixas de texto, botões de rádio, caixas de seleção, entre outros.</p>
+            <pre><code>&lt;form action="submit.php" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            <p>Formulários são essenciais para interações dinâmicas em sites, como login, cadastro e envio de dados.</p>
+        </section>
+
+        <section id="estilos-formatacao">
+            <h2>6. Estilos e Formatação</h2>
+            <p>O HTML por si só define a estrutura do conteúdo, mas para tornar o visual mais atraente, utilizamos CSS (Cascading Style Sheets) para aplicar estilos e formatações. O CSS pode ser aplicado diretamente em uma tag, em uma seção <code>&lt;style&gt;</code> no cabeçalho, ou em arquivos CSS externos.</p>
+            <p>Veja um exemplo de como aplicar estilo diretamente no HTML:</p>
+            <pre><code>&lt;h1 style="color: blue; text-align: center;"&gt;Título Centralizado em Azul&lt;/h1&gt;</code></pre>
+            <p>Outra maneira é usar a tag <code>&lt;style&gt;</code> para definir estilos no cabeçalho:</p>
+        </section>
+        <section id="exercicios-html">
+            <h2>7. Exercícios</h2>
+            <p>Para praticar, disponibilizo agora uma lista de exercícios de HTML.</p>
+            <p><a href="https://fit.faccat.br/~fpereira/pagina/autoria/2018/ExerciciosPraticosCSS2018-1.pdf">PDF - Questões HTML5</a></p>
+        </section>
+        <section id="introducao-css">
+            <h2>8. Introdução ao CSS</h2>
+            <p>CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas web. Ele permite alterar cores, fontes, layout, espaçamento, entre outros aspectos visuais de uma página. Juntamente com o HTML, o CSS dá vida ao design da web.</p>
+        </section>
+
+        <section id="conceitos-basicos-css">
+            <h2>9. Conceitos Básicos do CSS</h2>
+            <p>O CSS é baseado em regras que controlam a aparência dos elementos HTML. Cada regra é composta por um seletor e um bloco de declaração. O seletor indica qual elemento HTML será estilizado, enquanto o bloco de declaração define o que será aplicado a esse elemento.</p>
+        </section>
+                
+        <section id="sintaxe-css">
+            <h2>10. Sintaxe do CSS</h2>
+            <p>A sintaxe básica do CSS segue o formato:</p>
+            <pre><code>seletor {
+            propriedade: valor;
+        }</code></pre>
+            <p>Por exemplo, para alterar a cor de um texto em um parágrafo:</p>
+            <pre><code>p {
+            color: red;
+        }</code></pre>
+            <p>Isso aplicará a cor vermelha a todos os parágrafos (<code>&lt;p&gt;</code>) na página.</p>
+            <p>Você pode aplicar várias propriedades ao mesmo tempo:</p>
+            <pre><code>p {
+            color: red;
+            font-size: 16px;
+            text-align: center;
+        }</code></pre>
+            <p>Isso altera a cor do texto, o tamanho da fonte e alinha o texto ao centro.</p>
+        </section>
+ 
+        <section id="seletores-css">
+            <h2>11. Seletores no CSS</h2>
+            <p>Os seletores no CSS determinam quais elementos HTML serão estilizados. Alguns exemplos de seletores comuns incluem:</p>
+            <ul>
+                <li><strong>Seletor de Tag:</strong> Aplica o estilo a todos os elementos de uma determinada tag. Exemplo: <code>p</code></li>
+                <li><strong>Seletor de Classe:</strong> Aplica o estilo a elementos com uma determinada classe. Exemplo: <code>.classe</code></li>
+                <li><strong>Seletor de ID:</strong> Aplica o estilo a um único elemento com um ID específico. Exemplo: <code>#id</code></li>
+            </ul>
+        </section>
+        
+        <section id="grid-css">
+            <h2>12. Grid no CSS</h2>
+            <p>O CSS Grid é uma ferramenta poderosa para criar layouts bidimensionais na web. Ele permite organizar elementos em linhas e colunas de forma simples e eficaz. A sintaxe básica envolve declarar um contêiner grid e definir o número de colunas e linhas.</p>
+            <pre><code>.grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }</code></pre>
+            <p>Os itens dentro do contêiner grid são organizados automaticamente em colunas. Para posicionar elementos individualmente:</p>
+            <pre><code>.grid-item {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }</code></pre>
+            <p>Esse exemplo posiciona o item na primeira e segunda coluna e na primeira linha. O CSS Grid facilita a criação de layouts complexos com controle preciso sobre os elementos.</p>
+        </section>
+        
+        <section id="exercicios-css">
+            <h2>13. Exercícios de CSS</h2>
+            <p>Para praticar os conceitos de CSS que você aprendeu, visite o site abaixo e resolva os exercícios práticos:</p>
+            <p><a href="https://web.fe.up.pt/~ssn/disciplinas/cdi/css/27.html" target="_blank">Clique aqui para acessar os exercícios de CSS</a></p>
+        </section>
+        
+
+        <footer>
+            <p>Quer se conectar com outros alunos e compartilhar conhecimento? Junte-se ao nosso grupo no WhatsApp!</p>
+            <p><a href="https://chat.whatsapp.com/seu-link-grupo" target="_blank">Clique aqui para entrar no grupo</a></p>
+            <p>&copy; 2024 Estude Programação Gratuitamente - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
